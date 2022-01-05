@@ -39,6 +39,6 @@ jobs:
           java-version: '11'
           distribution: 'adopt'
       - name: Complie TestTest
-        run: pwd
+        run: javac ./src/test/TestTest.java
       - name: Run Testjavac ~/src/test/TestTest
-        run: java ~/src/test/TestTest
+        run: java ./src/test/TestTest
