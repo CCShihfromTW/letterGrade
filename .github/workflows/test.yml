@@ -27,11 +27,6 @@ jobs:
       uses: gradle/wrapper-validation-action@e6e38bacfdf1a337459f332974bb2327a31aaf4b
     - name: Build with Gradle
       run: gradle build
-      
-  test:
-    name: Test
-    runs-on: ubuntu-latest
-    steps:
-      - name: Test with Gradle
-        run: gradle test
+    - name: Test with Gradle
+      run: gradle test
 
