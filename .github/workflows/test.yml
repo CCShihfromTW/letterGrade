@@ -36,13 +36,9 @@ jobs:
     name: Test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Set up JDK 11
-        uses: actions/setup-java@v2
+      - name: Build with Gradle
+        uses: gradle/gradle-test-action@4137be6a8bf7d7133955359dbd952c0ca73b1021
         with:
-          java-version: '11'
-          distribution: 'adopt'
-      - name: Complie TestTest
-        run: javac ./src/test/TestTest.java
-      - name: Run Testjavac ~/src/test/TestTest
-        run: java ./src/test/TestTest
+          gradle-version: '5.0'
+          arguments: test
+
