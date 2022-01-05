@@ -30,4 +30,3 @@ jobs:
       with:
         gradle-version: '5.0'
         arguments: build
-    run: java TestTest.java
